@@ -55,7 +55,7 @@ class App extends React.Component {
   }
   render(){
     let feedback = ""
-    if(this.state.errorMessage === ""){
+    if(feedback === ""){
       feedback = this.state.imgStatus === true ? "Click here to generate image" : "Loading Image..."
     }else{
       feedback = this.state.errorMessage
