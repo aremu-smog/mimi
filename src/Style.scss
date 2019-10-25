@@ -1,0 +1,106 @@
+$purple:  #A007E0;
+$grey: #EAEAEA;
+
+@font-face{
+    font-family: "Montserrat Bold";
+    src: url("./fonts/Montserrat-Bold.otf");
+}
+@font-face{
+    font-family: "Montserrat Black";
+    src: url("./fonts/Montserrat-Black.otf");
+}
+@font-face{
+    font-family: "Montserrat Regular";
+    src: url("./fonts/Montserrat-Regular.otf");
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background: $purple;
+    height: 100vh;
+    width: 100%;
+    display: flexbox;
+    padding: 4em 0;
+    
+}
+.app{
+    max-width: 450px;
+    min-height: 500px;
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 50px rgb(0,0,0);
+}
+
+.app header{
+    border-radius: 10px 10px 0 0;
+    background: $purple;
+    color: white;
+    font-size: .80em;
+    padding: 1em 0em;
+    text-align: center;
+    font-family: "Montserrat Bold";
+}
+
+.app .inner{
+    padding: 2em;
+
+    button{
+        padding: 1em;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        background: $purple;
+        border-radius: 7px;
+        font-family: "Montserrat Regular";
+        font-size: 13px;
+        transition: box-shadow 0.5s;
+        &:hover{
+            box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+        }
+    }
+    input{
+        width: calc(100% - 2em);
+        border: none;
+        color: black;
+        margin-bottom: 1em;
+        outline: none;
+        padding: 1em;
+        border-radius: 7px;
+        background: $grey;
+    }
+
+    .meme{
+        background: $grey;
+        width: 100%;
+        margin-top: .5em;
+        font-family: "Montserrat Black";
+        text-transform: uppercase;
+        min-height: 200px;
+        position: relative;
+        text-align: center;
+        -webkit-text-stroke: 1px white;
+       
+        
+        .topText{
+            position: absolute;
+            font-size: 1.5em;
+             top: -5px;
+             width: 100%;
+             text-align: center;
+        
+        }
+        .bottomText{
+            font-size: 1.5em;
+           position: absolute;
+           width: 100%;
+           text-align: center;
+           bottom: -10px;
+        }
+    }
+}

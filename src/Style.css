@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("./fonts/Montserrat-Bold.otf");
+}
+
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("./fonts/Montserrat-Black.otf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("./fonts/Montserrat-Regular.otf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background: #A007E0;
+  height: 100vh;
+  width: 100%;
+  display: flexbox;
+  padding: 4em 0;
+}
+
+.app {
+  max-width: 450px;
+  min-height: 500px;
+  background: white;
+  border-radius: 10px;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 50px black;
+          box-shadow: 0px 0px 50px black;
+}
+
+.app header {
+  border-radius: 10px 10px 0 0;
+  background: #A007E0;
+  color: white;
+  font-size: .80em;
+  padding: 1em 0em;
+  text-align: center;
+  font-family: "Montserrat Bold";
+}
+
+.app .inner {
+  padding: 2em;
+}
+
+.app .inner button {
+  padding: 1em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  background: #A007E0;
+  border-radius: 7px;
+  font-family: "Montserrat Regular";
+  font-size: 13px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.app .inner button:hover {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.app .inner input {
+  width: calc(100% - 2em);
+  border: none;
+  color: black;
+  margin-bottom: 1em;
+  outline: none;
+  padding: 1em;
+  border-radius: 7px;
+  background: #EAEAEA;
+}
+
+.app .inner .meme {
+  background: #EAEAEA;
+  width: 100%;
+  margin-top: .5em;
+  font-family: "Montserrat Black";
+  text-transform: uppercase;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+  -webkit-text-stroke: 1px white;
+}
+
+.app .inner .meme .topText {
+  position: absolute;
+  font-size: 1.5em;
+  top: -5px;
+  width: 100%;
+  text-align: center;
+}
+
+.app .inner .meme .bottomText {
+  font-size: 1.5em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -10px;
+}
+/*# sourceMappingURL=Style.css.map */
